@@ -43,7 +43,7 @@ app.delete("/api/todos/delete/:id", async (req, res) => {
   }
 });
 
-app.put("/api/todos/update/:id", async (req, res) => {
+app.patch("/api/todos/update/:id", async (req, res) => {
   let { id } = req.params;
 
   try {
