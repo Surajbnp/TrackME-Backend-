@@ -3,6 +3,7 @@ const app = express();
 const connection = require("./database/server");
 require("dotenv").config();
 const { TaskModel } = require("./models/Task.model");
+const cors = require("cors");
 
 const PORT = process.env.PORT || 8080;
 app.use(express.json());
